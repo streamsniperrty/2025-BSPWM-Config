@@ -8,10 +8,10 @@ We will install the following:
 
 - BSPWM and SXHKD
 - feh
-- *picom ([ibhagwan fork](https://github.com/ibhagwan/picom))*
-- *polybar*
-- *dmenu*
-- *alacritty*
+- **picom ([ibhagwan fork](https://github.com/ibhagwan/picom))**
+- **polybar**
+- **dmenu**
+- **alacritty**
 - Hermit Monospaced Font
 
-*The italicized packages mean that those have to be compiled from source.*
+*The bolded packages mean that those have to be compiled from source.*
