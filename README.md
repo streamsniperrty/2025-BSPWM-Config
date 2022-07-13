@@ -8,4 +8,4 @@ We will install the following:
 
 - BSPWM and SXHKD
 - feh
-- picom !(ibhagwan fork)[https://github.com/ibhagwan/picom]
+- picom (ibhagwan fork)[https://github.com/ibhagwan/picom]
