@@ -12,6 +12,7 @@ We will install the following:
 - **polybar**
 - **dmenu**
 - **alacritty**
+- libnotify-dev
 - Hermit Monospaced Font
 
 *The bolded packages mean that those have to be compiled from source.*
