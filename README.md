@@ -10,6 +10,8 @@ We will install the following:
 
 - BSPWM and SXHKD
 - feh
+- fish
+- nvim
 - **picom ([ibhagwan fork](https://github.com/ibhagwan/picom))**
 - **polybar**
 - **dmenu**
