@@ -6,6 +6,11 @@ feh --bg-scale "/home/labibmahmud/.config/Wallpapers/nihonYoru1.jpg" &
 # feh --bg-scale "/home/labibmahmud/.config/Wallpapers/Bleach.jpg" &
 $HOME/.config/polybar/launch.sh &
 picom --experimental-backends &
+
+# For Arch based distros
+exec /usr/lib/xfce4/notifyd/xfce4-notifyd &
+
+# For Debian based distros
 # exec /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd &
 
 # Sets dual monitors, change HDMI1 to your according output
