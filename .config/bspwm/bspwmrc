@@ -3,7 +3,6 @@
 # Autostart
 sxhkd &
 feh --bg-scale "/home/labibmahmud/.config/Wallpapers/yourname.png" &
-# feh --bg-scale "/home/labibmahmud/.config/Wallpapers/Bleach.jpg" &
 polybar -c /home/labibmahmud/.config/polybar/config mybar -r &
 picom --animations -b &
 
