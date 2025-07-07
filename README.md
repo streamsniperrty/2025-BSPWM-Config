@@ -25,7 +25,7 @@ We will install the following:
 
 After installing all the packages listed above, move the files into the directories accordingly. For example, move all the directories in `.config` into `~/.config` in your setup.
 
-![Doing some activities](imgs/activities.jpg)
+![Doing some activities](imgs/bspwm.png)
 
 ### Installating Rofi
 This is documented on the official repo: https://github.com/adi1090x/rofi
