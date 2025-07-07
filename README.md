@@ -2,7 +2,7 @@
 
 Cloned from 2022 BSPWM rice.
 
-![My Desktop](imgs/main.jpg)
+![Doing some activities](imgs/bspwm.png)
 
 ## Prerequisites
 
@@ -12,9 +12,9 @@ We will install the following:
 - feh
 - fish
 - nvim
-- **picom ([ibhagwan fork](https://github.com/ibhagwan/picom))**
-- **polybar**
-- **rofi**
+- **picom ([ft-labs fork](https://github.com/r0-zero/picom))**
+- polybar
+- rofi
 - kitty
 - libnotify-dev
 - Hermit Monospaced Font
@@ -24,8 +24,6 @@ We will install the following:
 ## Installation
 
 After installing all the packages listed above, move the files into the directories accordingly. For example, move all the directories in `.config` into `~/.config` in your setup.
-
-![Doing some activities](imgs/bspwm.png)
 
 ### Installating Rofi
 This is documented on the official repo: https://github.com/adi1090x/rofi
@@ -51,6 +49,11 @@ The only thing that I changed is the font. To change the font, go to `$HOME/.con
 First, install neovim normally through your package manager. Once completed, install `vim-plug` from https://github.com/junegunn/vim-plug. Then, copy the four files into your own file system, and sync all the plugins by running: `:PlugInstall`.
 
 To use the tree file browser, run `:NvimTreeOpen`.
+
+### Installing Picom
+We use a fork of picom in order to make sure the animations are working. Please follow the instructions on how to compile it on the GitHub page if on Debian/Ubuntu systems.
+
+If on Arch Linux, run `yay -S picom-ftlabs-git`
 
 ## Script
 
