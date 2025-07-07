@@ -5,7 +5,7 @@ sxhkd &
 feh --bg-scale "/home/labibmahmud/.config/Wallpapers/yourname.png" &
 # feh --bg-scale "/home/labibmahmud/.config/Wallpapers/Bleach.jpg" &
 polybar -c /home/labibmahmud/.config/polybar/config mybar -r &
-picom &
+picom --animations -b &
 
 # For Arch based distros
 exec /usr/lib/xfce4/notifyd/xfce4-notifyd &
