@@ -47,6 +47,11 @@ $ chmod +x setup.sh
 ```
 The only thing that I changed is the font. To change the font, go to `$HOME/.config/rofi/launchers/type-2/shared/fonts.rasi`. Use Hermit.
 
+### Installing NeoVim
+First, install neovim normally through your package manager. Once completed, install `vim-plug` from https://github.com/junegunn/vim-plug. Then, copy the four files into your own file system, and sync all the plugins by running: `:PlugInstall`.
+
+To use the tree file browser, run `:NvimTreeOpen`.
+
 ## Script
 
 I'm currently working on an installation script, called ***Yume***. My goal is to create a terminal GUI that helps you install my entire setup flawlessly. Currently, only the bash script is setup, so you can use that if you'd like. Yume is intended for Arch based systems, such as Arch Linux and Manjaro. (Sorry Debian users!)
