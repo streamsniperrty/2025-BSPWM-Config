@@ -54,7 +54,3 @@ To use the tree file browser, run `:NvimTreeOpen`.
 We use a fork of picom in order to make sure the animations are working. Please follow the instructions on how to compile it on the GitHub page if on Debian/Ubuntu systems.
 
 If on Arch Linux, run `yay -S picom-ftlabs-git`
-
-## Script
-
-I'm currently working on an installation script, called ***Yume***. My goal is to create a terminal GUI that helps you install my entire setup flawlessly. Currently, only the bash script is setup, so you can use that if you'd like. Yume is intended for Arch based systems, such as Arch Linux and Manjaro. (Sorry Debian users!)
