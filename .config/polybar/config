@@ -34,14 +34,13 @@ gray = #a89984
 [bar/mybar]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 24 
+height = 28
 ;offset-x = 12
 ;offset-y = 1%
 radius = 0.0
 fixed-center = false
 
 background = ${colors.background}
-foreground = ${colors.foreground}
 
 bottom = false
 
@@ -62,16 +61,12 @@ wm-restack = bspwm
 ;;; FONT CONFIG ;;;
 
 font-0 = Hermit:pixelsize=9;2
-font-1 = FontAwesome6Free:style=Solid:size=9;2
-font-2 = FontAwesome6Free:style=Regular:size=9;2
-font-3 = FontAwesome6Brands:style=Regular:size=10;2
-font-4 = Monospace:pixelsize=14;4
-font-5 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-1 = Monospace:pixelsize=14;4
 
 ;;; MODULES ;;;
 
 modules-left = bspwm separator xtitle 
-modules-right = wireless-network bat vol datetime
+modules-right = vol datetime
 
 ; tray-position = right
 ; tray-padding = 2
@@ -120,7 +115,7 @@ label-occupied-underline = ${colors.gray}
 type = internal/xwindow
 label = [ %title:0:60% ]
 format-padding = 0
-format-foreground = ${colors.foreground}
+format-foreground = ${colors.yellow}
 
 [module/separator]
 type = custom/text
@@ -128,56 +123,27 @@ content = |
 content-foreground = ${colors.foreground}
 content-padding = 0 
 
-[module/wireless-network]
-type = internal/network
-interface = wlp2s0
-
-format-connect = <label-connected>
-format-disconnected = <label-disconnected>
-
-label-connected = [  : %local_ip% ]
-label-disconnected = [ NETWORK DISCONNECT ]
-
-[module/bat]
-type = internal/battery 
-interval = 5
-
-format-charging = <label-charging>
-label-charging = [  : %percentage%% ]
-
-format-discharging = <label-discharging>
-label-discharging = [  : %percentage%% ]
-
-format-full = <label-full>
-label-full = [  : %percentage%% ]
-
-full-at = 99
-low-at = 5
-
-format-padding = 0
-format-foreground = ${colors.foreground}
-
 [module/vol]
-type = internal/alsa
+type = internal/pulseaudio
 interval = 0 
 
 format-volume = <label-volume>
-label-volume = [  : %percentage%% ]
+label-volume = [ VOL : %percentage%% ]
 
 format-muted = <label-muted>
-label-muted = [  : %percentage%% ]
+label-muted = [ MUT : %percentage%% ]
 
 format-padding = 0
-format-foreground = ${colors.foreground}
+format-foreground = ${colors.purple}
 
-click-right = pavucontrol-qt
+click-right = pavucontrol
 
 [module/datetime]
 type = custom/script
-exec = echo [  $(date +"%a %d, %R") ]
+exec = echo [ $(date +"%a %d, %R") ]
 interval = 5
 format-padding = 0
-format-foreground = ${colors.foreground}
+format-foreground = ${colors.purple}
 
 ;;; THE END OF CONFIG ;;;
 
